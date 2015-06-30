@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var main = require('../index');
+var path = require('path');
+
+program
+  .command('load [config] [fixtures]')
+  .description('load fixtures from [fixtures] file into store initiated in [config] file')
+  .action(function(config, fixtures, options){
+    storeFactory = require(path.resolve(config));
+    fixtures = require(path.resolve(fixtures));
+
+    storeFactory(function(err, store){
+      console.log("Loading data...");
+      main.load(store, fixtures, function(err){
+        console.log("Finished!");
+        process.exit();
+      })
+    });
+  })
+
+program.parse(process.argv);

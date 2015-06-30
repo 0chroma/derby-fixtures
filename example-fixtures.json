@@ -1,0 +1,9 @@
+{
+  "collections": {
+    "myCollection": {
+      "documents": [
+        {"id": "589fc681-43c6-4131-91d0-daad14003e02", "foo": "bar"}
+      ]
+    }
+  }
+}

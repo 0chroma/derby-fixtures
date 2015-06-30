@@ -1,0 +1,25 @@
+{
+  "name": "derby-fixtures",
+  "version": "1.0.0",
+  "description": "Fixtures tool for Derby/Racer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "./bin/racer-fixtures",
+  "keywords": [
+    "derby",
+    "fixtures",
+    "racer"
+  ],
+  "author": "HFLW",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.8.1"
+  },
+  "devDependencies": {
+    "livedb-mongo": "^0.4.1",
+    "racer": "^0.6.0-alpha43",
+    "redis": "^0.12.1"
+  }
+}
